@@ -1,0 +1,257 @@
+/*header*/
+.header {
+	transition: all 1s .5s;
+}
+.header__init {
+	opacity: 0;
+	transform: translate(0,-100%);
+}
+.header__done {
+	opacity: 1;
+	transform: translate(0,0);
+}
+/*screen1*/
+.screen1__item1 {
+	transition: all 1s;
+}
+.screen1__item2 {
+	transition: all 1s .5s;
+}
+.screen1__item1__init,
+.screen1__item2__init {
+	opacity: 0;
+	transform: translate(0,100%);
+}
+.screen1__item1__done,
+.screen1__item2__done {
+	opacity: 1;
+	transform: translate(0,0);
+}
+/*screen2*/
+.screen2__item1 {
+	transition: all 1s;
+}
+.screen2__item2,
+.screen2__img2 {
+	transition: all 1s .5s;
+}
+.screen2__item1__init::after {
+	opacity: 0;
+}
+.screen2__item1__done::after {
+	opacity: 1;
+}
+.screen2__item1__init,
+.screen2__item2__init {
+	opacity: 0;
+	transform: translate(0,100%);
+}
+.screen2__item1__done,
+.screen2__item2__done {
+	opacity: 1;
+	transform: translate(0,0);
+}
+.screen2__img2__init {
+	opacity: 0;
+}
+.screen2__img2__done {
+	opacity: 1;
+}
+.screen2__img3__init {
+	transform: translate(0,150%);
+}
+.screen2__img3__done {
+	animation: one 1s 1.5s backwards;
+}
+@keyframes one {
+	0% {
+		transform: translate(0,150%);
+	}
+	40% {
+		transform: translate(0,-8%);
+	}
+	80% {
+		transform: translate(0,3%);
+	}
+	100% {
+		transform: translate(0,0);
+	}
+}
+/*screen3*/
+.screen3__item1,
+.screen3__img {
+	transition: all 1s;
+}
+.screen3__item2 {
+	transition: all 1s 1s;
+}
+.screen3__item1__init,
+.screen3__item2__init {
+	opacity: 0;
+	transform: translate(0,100%);
+}
+.screen3__item1__done,
+.screen3__item2__done {
+	opacity: 1;
+	transform: translate(0,0);
+}
+.screen3__item1__init::after {
+	opacity: 0;
+}
+.screen3__item1__done::after {
+	opacity: 1;
+}
+.screen3__img__init {
+	opacity: 0;
+	transform: scale(.1);
+}
+.screen3__img__done {
+	opacity: 1;
+	transform: scale(1);
+}
+.screen3__block__init {
+	transform: translate(0,170%);
+}
+.screen3__block__done {
+	animation: two 1s 2s backwards;
+}
+@keyframes two {
+	0% {
+		transform: translate(0,170%);
+	}
+	40% {
+		transform: translate(0,-10%);
+	}
+	80% {
+		transform: translate(0,6%);
+		border: ;
+	}
+	100% {
+		transform: translate(0,0);
+	}
+}
+.screen3__block__done > .screen3__block__items::after {
+	content: " ";
+	display: block;
+	width: 58px;
+	height: 58px;
+	border: 6px solid;
+	border-radius: 50%;
+	position: absolute;
+	top: -6px;
+	left:-6px;
+	animation: three 1s ease-in-out 3s 2;
+}
+.screen3__block__done > .screen3__block__item1::after {
+	border-color: #1f5975;
+}
+.screen3__block__done > .screen3__block__item2::after {
+	border-color: #424d76;
+}
+.screen3__block__done > .screen3__block__item3::after {
+	border-color: #6b4146;
+}
+.screen3__block__done > .screen3__block__item4::after {
+	border-color: #29535f;
+}
+.screen3__block__done > .screen3__block__item5::after {
+	border-color: #3e4e40;
+}
+@keyframes three {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+/*screen4*/
+.screen4__item1,
+.screen4__block__item1,
+.screen4__block__item2,
+.screen4__block__item3,
+.screen4__block__item4 {
+	transition: all 1s;
+}
+.screen4__item2 {
+	transition: all 1s 1s;
+}
+.screen4__item1__init,
+.screen4__item2__init {
+	opacity: 0;
+	transform: translate(0,100%);
+}
+.screen4__item1__done,
+.screen4__item2__done {
+	opacity: 1;
+	transform: translate(0,0);
+}
+.screen4__item1__init::after {
+	opacity: 0;
+}
+.screen4__item1__done::after {
+	opacity: 1;
+}
+.screen4__block__item1__init,
+.screen4__block__item2__init,
+.screen4__block__item3__init,
+.screen4__block__item4__init {
+	opacity: 0;
+	transform: scale(.3);
+}
+.screen4__block__item1__done,
+.screen4__block__item2__done,
+.screen4__block__item3__done,
+.screen4__block__item4__done {
+	opacity: 1;
+	transform: scale(1);
+}
+/*screen5*/
+.screen5__img,
+.screen5__item1 {
+	transition: all 1s;
+}
+.screen5__item2 {
+	transition: all 1s 1s;
+}
+.screen5__img__init {
+	opacity: 0;
+	transform: scale(.3);
+}
+.screen5__img__done {
+	opacity: 1;
+	transform: scale(1);
+}
+.screen5__item1__init {
+	opacity: 0;
+	transform: translate(0,100%);
+}
+.screen5__item1__done {
+	opacity: 1;
+	transform: translate(0,0);
+}
+.screen5__item1__init::after {
+	opacity: 0;
+}
+.screen5__item1__done::after {
+	opacity: 1;
+}
+.screen5__item2__init {
+	opacity: 0;
+	transform: translate(0,100%);
+}
+.screen5__item2__done {
+	opacity: 1;
+	transform: translate(0,0);
+}
+/*left-nav*/
+.left-nav {
+	transition: all 1s;
+}
+.left-nav__fixed {
+	opacity: 1;
+	right: 0;
+}
